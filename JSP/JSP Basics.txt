@@ -1,0 +1,43 @@
+JAVA SERVER PAGES
+
+
+What is JSP?
+Answer: JSP is a technology for controlling the content or appearance of a webpage through the use of servlets, small programs specified on the webpage that run on the server to modify the content of the webpage before it is sent to the user who requested it.
+
+
+What was the problem/need in the world that led to the introduction of java server pages in the world?
+Answer: JSP seems to be an abstraction over servlets to make programming easier. It is used in the presentation layer (advised to be devoid of business logic)
+
+
+What are the pros and cons of using JSP?
+Pros:
+# JSP are translated and compiled into JAVA servlets but are easier to develop than java servlets
+# If a JSP page is modified, we don’t need to recompile and redeploy the project. The servlet code needs to be recompiled and updated. 
+# In JSP, we can use a lot of tags such as action tags, jstl, custom tags etc that reduces the code
+# JSP has all advantages of java i.e. write once and run anywhere
+
+Cons: 
+# As JSP pages are translated to servlets and compiled, it is difficult to trace errors occurred in JSP pages
+# JSP pages require double the disk space to hold the JSP page
+# JSP pages require more time when accessed for the first time as they are meant to be compiled on the server
+
+
+What are the alternatives to using JSP?
+# ASP: ASP.NET is a server side web application framework, and most developers using it use C# programming language to code with it. This is private to microsoft and runs only on windows system that too on limited servers like IIS
+# PHP: PHP is a server side scripting language designed for web development but is also used as a general purpose language. Compared to JSP, you won’t get the power of java. Though, being open source its cost effective, has a huge community support. PHP gives you more freedom and is prone to human errors (don’t have information about these errors)
+# JSF: JSF is a web application that is used to simplify development integration of web based user interfaces
+# PERL: Perl 5 in 1990s has been recognized as CGI scripting language attributed to its regular expression and string parsing capabilities. It can be used to create dynamic web pages.
+Server side scripting for dynamic web pages can be done via PHP, Perl, ASP, ASP.NET, JSP, ColdFusion etc
+
+
+Explain the life cycle of a JSP page?
+Ans: 
+	i. Translation of JSP page
+	ii. Compilation of JSP page
+	iii. Class loading (Class is loaded by a class loader) 
+	iv. Instantiation (Object of the Generated Servlet is created)
+	v. Initialization (jspInit() method is invoked by the container)
+	vi. Request Processing (_jspService() method is invoked by the container)
+	vii. Destroy (jspDestroy() method is invoked by the container)
+
+
