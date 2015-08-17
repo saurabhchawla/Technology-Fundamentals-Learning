@@ -1,0 +1,16 @@
+What is Java Server Faces?
+Java Server Faces is a component based framework for web applications based on MVC architecture.
+
+
+What is the need/problem in the world that led to the introduction of Java Server Faces?
+
+
+
+What are the pros/cons of using JSF?
+Answer: 
+Pros: 
+# With its MVC design pattern architecture, JSF ensures good design and greater  maintainability.
+# It simplifies development by providing component centric approach to developing java web user interfaces.
+# It has a rich API and hence provide good control over the components and lifecycle phases
+
+Explain the JSF life cycle?
