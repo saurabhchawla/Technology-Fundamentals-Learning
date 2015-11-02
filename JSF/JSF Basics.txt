@@ -1,16 +1,37 @@
+JAVA SERVER FACES
+
 What is Java Server Faces?
 Java Server Faces is a component based framework for web applications based on MVC architecture.
 
 
 What is the need/problem in the world that led to the introduction of Java Server Faces?
-
+Well, Java Server Faces is a powerful technology for rapid and managed web application development. There hasnt been anything like that existing before which was component based, Event Oriented MVC. So, the power that JSF brings with it might have led to its introduction in the world. 
 
 
 What are the pros/cons of using JSF?
 Answer: 
 Pros: 
-# With its MVC design pattern architecture, JSF ensures good design and greater  maintainability.
+# With its MVC design pattern architecture, JSF ensures good design and greater  maintainability. It allows to separate view rendering technology from the rest of the applications
 # It simplifies development by providing component centric approach to developing java web user interfaces.
 # It has a rich API and hence provide good control over the components and lifecycle phases
+# JSF is an Event based framework i.e. it can respond to user interactions
+
+Cons:
+# Unlike javascript, since all events in JSF are managed at the server side. This sometimes makes the application very slow.
+# Error prone since a single variable immediate changes the server side life cycle
+# Server side error while opening client side pages which is surprising for users who have been using other technologies
+# Testing is comparatively difficult, with JSF, we can test the beans by unit testing and the whole UI by deploying the application to a server and hitting the application with Selenium but missing out on, loading a static version of the page and testing it on selenium, test the generated mark up without a full blown application server. Test the mapping of attributes/parameter to bean methods (comparatively all of this is available in Spring MVC)
 
 Explain the JSF life cycle?
+# Restore View: Restore component tree for a particular view id
+# Apply Request: make changes in the local component tree by extracting new values from the request
+# Process Validation: Process all validators registered with the components in the tree
+# Update Model Values: set the server side object properties
+# Invoke Application: handle application level events like submitting a form and linking to another page
+# Render Response: delegate the responsibility of rendering the page to JSP containers in case JSP pages are used
+
+What are the alternative to JSF?
+# ASP.net is one of the alternatives but ASP.net is allegedly said to be more heavy and complex, can’t say in what terms
+# HTML, CSS, Javascript, AJAX basic combination (maybe wiht JQuery) with a Spring Back-End
+# Apache Struts
+# Spring MVC
